@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:100px;
+        }
+
+        input, select, button{
+            padding:10px;
+            margin:10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<form method="POST">
+
+    <input type="number" step="any" name="num1" placeholder="First Number" required>
+
+    <input type="number" step="any" name="num2" placeholder="Second Number" required>
+
+    <select name="choice">
+
+        <option value="1">Add</option>
+        <option value="2">Subtract</option>
+        <option value="3">Multiply</option>
+        <option value="4">Divide</option>
+
+    </select>
+
+    <br>
+
+    <button type="submit">Calculate</button>
+
+</form>
+
+<h2>{{ result }}</h2>
+
+</body>
+</html>
